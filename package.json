@@ -1,0 +1,26 @@
+{
+  "name": "static-website-postdeploy-lambda",
+  "version": "0.0.1",
+  "description": "AWS Lambda function to handle postdeploy actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "chmod 744 ./build-bundle.sh",
+    "build": "./build-bundle.sh static-website-postdeploy-lambda.zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eximchain/static-website-postdeploy-lambda.git"
+  },
+  "author": "Louis Lamia",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Eximchain/static-website-postdeploy-lambda/issues"
+  },
+  "homepage": "https://github.com/Eximchain/static-website-postdeploy-lambda#readme",
+  "dependencies": {
+    "@types/node": "^12.6.3",
+    "aws-sdk": "^2.424.0",
+    "node-zip": "^1.1.1"
+  }
+}
